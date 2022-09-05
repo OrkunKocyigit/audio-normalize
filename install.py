@@ -7,8 +7,8 @@ PyInstaller.__main__.run([
     "--onefile",
     "--console",
     "--name", "audio-normalize." + ("exe" if os.name == "nt" else "bin"),
-    "--distpath", "../dist",
-    "--workpath", "../build",
-    "--specpath", "../build",
-    "../main.py",
+    "--distpath", "./dist",
+    "--workpath", "./build",
+    "--specpath", "./build",
+    "./main.py",
 ])
